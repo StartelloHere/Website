@@ -1,37 +1,11 @@
 .header{
   position: relative;
   height: 100px !important;
-
 }
 svg{
-  margin: 5px;
+  /*margin: 5px;*/
   width: 100%;
   /*height: 300px;*/
-}
-.GreenO {
-  transition: 0.5s;
-  animation: MoveO 2.5s infinite alternate ;
-}
-@keyframes MoveO {
-  50% {
-    stroke:lightgreen;
-  }
-}
-.GrayA{
-  animation: colorAF 1.4s  alternate;
-}
-@keyframes colorA {
-100%{
-  stroke-width:2;
-}
-}
-@keyframes colorAF {
-  50%{
-    stroke-width:0;
-  }
-50%{
-  stroke-width:3;
-}
 }
 input::placeholder {
   color: black;
@@ -46,12 +20,22 @@ input::placeholder {
   margin: 10px;
 }
 .footer{
-				box-shadow: 0 0 5px #333;
-          height: 100px !important;
-
+	box-shadow: 0 0 5px #333;
+  height: 100px !important;
   position: relative;
 }
 .email:focus {
   border-bottom: 1px solid #7cb342 !important;
   box-shadow: 0 1px 0 0 #7cb342 !important;
  }
+.img{
+  height: 100%;
+  width: 100%;
+  margin-top: 30%;
+  box-shadow: 0 0 5px #333;
+}
+/*.crop {
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+}*/
