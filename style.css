@@ -1,3 +1,12 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
 .header{
   position: relative;
   height: 60px !important;
@@ -20,13 +29,16 @@ input::placeholder {
 .footer{
 	box-shadow: 0 0 5px #333;
   height: 60px !important;
-  position: relative;
 }
+
 .email:focus {
   border-bottom: 1px solid #7cb342 !important;
   box-shadow: 0 1px 0 0 #7cb342 !important;
  }
 .responsive-img{
   margin-top: 6%;
+  margin-bottom: 6%;
   box-shadow: 0 0 9px #333;
+  height: 100%;
+  width: 90%;
 }
