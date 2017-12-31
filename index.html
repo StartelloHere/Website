@@ -4,17 +4,20 @@
     <meta charset="utf-8">
     <title>Startello</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   </head>
   <body class="valign-wrapper">
     <header class="header light-green darken-0 z-depth-2"></header>
     <div class="container">
-    <div class="row">
-      <div class="col s12 m6 l6 push-l6 push-m6">
-
-        <svg version="1.1" id="Hy8Zi367pzG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 600 150" >
+      <div class="row">
+        <div id="Simg" class="col s12 m6 l6 Simg">
+          <center>
+            <img  class="responsive-img" src="Sandy final.PNG" height="400" width="600" alt="">
+          </center>
+        </div>
+        <div id="Ssvg" class="col s12 m6 l6 Ssvg">
+          <svg version="1.1" id="Hy8Zi367pzG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 600 150" >
             <style>
 
                 #Bydbj3a76ff{fill: #84C341;}#rkYZs36Q6Mz{fill: #404546;}#ByhbohTQafM{fill: #404546;}#BJT-jn6Xpfz{fill: #404546;}#rkC-s26XTGG{fill: #404546;}#rkkzi3aQ6Gz{fill: #404546;}#S1gfs3a7Tzf{fill: #404546;}#HyZzihTmTGM{fill: #404546;}#B1Mzi2aXTfG{fill: #404546;}#rJNGina7pMM{fill: #404546;}#BJBzin67pfz{fill: #84C341;}
@@ -350,17 +353,10 @@
               C198.458,111.059,198.493,110.516,198.294,110.061z"/>
                 </g>
             </g>
-        </svg>
+          </svg>
         </div>
-      <div class="col s12 m6 l6 pull-l6 pull-m6">
-<center>
-<img class="responsive-img" src="Sandy final.PNG" height="400" width="600" alt="">
-</center>
-      </div>
-
-        <div class="col s12 m6 l6">
-
-        <p class="flow-text ">Do you want to start your own business ? You dont have any idea how to start ?  We can help you . We will be launching a program to help people start their own businesss with mentors and guides. Join our mailing list to stay updated.</p>
+        <div id="Stext" class="col s12 m6 l6 Stext">
+          <p class="flow-text ">Do you want to start your own business ? You dont have any idea how to start ?  We can help you . We will be launching a program to help people start their own businesss with mentors and guides. Join our mailing list to stay updated.</p>
           <form action="//startello.us17.list-manage.com/subscribe/post?u=aa606a2ad43bc343e2446873a&amp;id=fdefd71ce6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <input id="email" name="EMAIL" class="email input-field col l7 m7 s10 validate" placeholder="Type your email here" type="email" required>
             <button id="submit" class=" z-depth-2 btn input-field col l3 m3 s5  waves-effect waves-light light-green darken-1  " type="submit" name="action">Join
@@ -370,34 +366,38 @@
                 <div class="response mce-success light-green lighten-3" id="mce-success-response" style="display:none"></div>
             </div>
           </form>
-
-
         </div>
-
-</div>
-</div>
-
-<main>
-</main>
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'>
-
-</script>
+      </div>
+    </div>
+    <main>
+    </main>
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
   <footer class="footer-copyright footer light-green darken-0">
       <p class="copyR left-align">© 2018 Startello</p>
   </footer>
-
   <script type="text/javascript">
-  $( "#submit" ).click(function() {
-  $('#email').css('display','none');
-  $('#submit').css('display','none');
-  });
-  Run();
-  function Run() {
-    setTimeout(function() {
-      $('.GreenA').css('animation', 'moveA 0.5s infinite alternate');
-    }, 3200);
-  }
-  </script>
+  $('#submit').click(function() {
+	$('#email').css('display', 'none');
+	$('#submit').css('display', 'none');
+});
+Run();
+function Run() {
+	setTimeout(function() {
+		$('.GreenA').css('animation', 'moveA 0.5s infinite alternate');
+	}, 3200);
+}
+</script>
+<script type="text/javascript">
+const toMobile = () => {
+	var img = document.getElementById('Simg').innerHTML;
+	document.getElementById('Simg').innerHTML = document.getElementById(
+		'Ssvg'
+	).innerHTML;
+	document.getElementById('Ssvg').innerHTML = img;
+};
+if (window.innerWidth < 700) {
+	toMobile();
+}
+</script>
   </body>
-
 </html>
