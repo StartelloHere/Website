@@ -10,6 +10,7 @@ main {
 .header{
   position: relative;
   height: 60px !important;
+  width: 100%;
 }
 svg{
   width: 100%;
@@ -29,6 +30,7 @@ input::placeholder {
 .footer{
 	box-shadow: 0 0 5px #333;
   height: 60px !important;
+  width: 100%;
 }
 
 .email:focus {
@@ -39,4 +41,49 @@ input::placeholder {
   margin-top: 6%;
   margin-bottom: 6%;
   width: 70%;
+}
+.copyR{
+  font-size: 16px;
+  color: white;
+  margin-left: 15px;
+}
+.message{
+  margin-top: 80px;
+height: 50%;
+width: 50%;
+/*padding: 20px;*/
+border-radius: 10px;
+box-shadow: 0 0 5px #333;
+border-width: 1px;
+border-color: #84C341;
+border-style: solid;
+margin-bottom: 15px;
+}
+.message>.head{
+  padding: 1px;
+    border-radius:10px 10px 0px 0px;
+    color: white;
+    font-size: 20px;
+}
+.message>.body{
+  padding: 5px;
+  background-color: white;
+  border-radius:0px 0px 10px 10px;
+
+}
+.mce-error{
+  /*height: 60px;*/
+  padding: 10px;
+margin: 5px;
+  box-shadow: 0 0 5px #333;
+  border-radius: 5px;
+}
+.mce-success{
+  margin: 5px;
+  /*height: 60px;*/
+  padding: 10px;
+  box-shadow: 0 0 5px #333;
+  border-radius: 5px;
+  /*background-color: green;*/
+
 }
