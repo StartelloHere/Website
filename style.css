@@ -1,33 +1,23 @@
-
 body {
   display: flex;
-  height: 100vh;
   min-height: 100vh;
   flex-direction: column;
 }
 
 main {
-  /*flex: 1 0 auto;*/
+  flex: 1 0 auto;
 }
-
 .header{
   position: relative;
   height: 60px !important;
   width: 100%;
 }
 svg{
-  width: 50%;
+  width: 100%;
 }
-
-
-/*
-  MailChimp Form 
-*/
-
 input::placeholder {
   color: black;
 }
-
 .btn{
   margin-left: 15px !important;
 }
@@ -47,18 +37,40 @@ input::placeholder {
   border-bottom: 1px solid #7cb342 !important;
   box-shadow: 0 1px 0 0 #7cb342 !important;
  }
-
-/*.responsive-img{
+.responsive-img{
   margin-top: 6%;
   margin-bottom: 6%;
   width: 70%;
-}*/
-.copy-right{
+}
+.copyR{
   font-size: 16px;
   color: white;
   margin-left: 15px;
 }
+.message{
+  margin-top: 80px;
+height: 50%;
+width: 50%;
+/*padding: 20px;*/
+border-radius: 10px;
+box-shadow: 0 0 5px #333;
+border-width: 1px;
+border-color: #84C341;
+border-style: solid;
+margin-bottom: 15px;
+}
+.message>.head{
+  padding: 1px;
+    border-radius:10px 10px 0px 0px;
+    color: white;
+    font-size: 20px;
+}
+.message>.body{
+  padding: 5px;
+  background-color: white;
+  border-radius:0px 0px 10px 10px;
 
+}
 .mce-error{
   /*height: 60px;*/
   padding: 10px;
@@ -66,7 +78,6 @@ margin: 5px;
   box-shadow: 0 0 5px #333;
   border-radius: 5px;
 }
-
 .mce-success{
   margin: 5px;
   /*height: 60px;*/
@@ -76,29 +87,12 @@ margin: 5px;
   /*background-color: green;*/
 
 }
-.animated-logo{
- margin: 0px !important;
- width: 100%;
- text-align: center; 
+.aga{
+margin: 0px !important;
 }
 .flow-text {
   margin-top: 0px !important;
-  /*text-align: justify;*/
-  padding: 10px;
 }
-
-/*img{
+img{
   margin-top: 0px !important;
-}*/
-
-.image-frame {
-  text-align: center; 
-  vertical-align: middle; 
-  height: 100%; 
-}
-
-.helper {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
 }
