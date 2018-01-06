@@ -364,15 +364,15 @@
         </div>
         <div id="Stext" class="col s12 m6 l6 Stext">
           <p align="justify" class="flow-text ">Do you want to start your own business ? You dont have any idea how to start ?  We can help you . We will be launching a program to help people start their own businesss with mentors and guides. Join our mailing list to stay updated.</p>
-          <form action="//startello.us17.list-manage.com/subscribe/post?u=aa606a2ad43bc343e2446873a&amp;id=fdefd71ce6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div class="Message"  style="display:none"><p class="message"></p></div>
+
+          <form action="//startello.us17.list-manage.com/subscribe/post-json?u=aa606a2ad43bc343e2446873a&amp;id=fdefd71ce6&c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <input id="email" name="EMAIL" class="email input-field col l7 m7 s10 validate" placeholder="Type your email here" type="email" required>
-            <button id="submit" class=" z-depth-2 btn input-field col l3 m3 s5  waves-effect waves-light light-green darken-1  " type="submit" name="action">Join
+            <button onclick="xload()" id="submit" class=" z-depth-2 btn input-field col l3 m3 s5  waves-effect waves-light light-green darken-1">Join
             </button>
-            <div id="mce-responses" class="clear">
-                <div class="response mce-error  red lighten-3" id="mce-error-response" style="display:none"></div>
-                <div class="response mce-success light-green lighten-3" id="mce-success-response" style="display:none"></div>
-            </div>
+                  <!-- <button type="button" onclick="xload()" name="button">click here please</button> -->
           </form>
+
         </div>
         </center>
       </div>
@@ -384,10 +384,56 @@
       <p class="copyR left-align">© 2018 Startello</p>
   </footer>
   <script type="text/javascript">
-  $('#submit').click(function() {
-	$('#email').css('display', 'none');
-	$('#submit').css('display', 'none');
-});
+//   var ab = function() {
+// 	if ($('.mce-error')[0].style.display !== 'none') {
+// 		console.log('hi');
+// 		$('#email').css('display', 'block');
+// 		$('#submit').css('display', 'block');
+// 	} else {
+// 		console.log('hello elese');
+// $('.mce-error').append('<h1>hello</h1>')
+// 	}
+// };
+var showS=function () {
+  $('#email').css('display', 'block');
+  $('#submit').css('display', 'block');
+}
+var xload = function () {
+  $.ajax({
+    type:$('form').attr('method'),
+    url:$('form').attr('action'),
+    data:$('form').serialize(),
+    dataType    : 'jsonp',
+       contentType: "application/jsonp; charset=utf-8",
+       jsonpCallback: 'callback',
+    success:function(data) {
+      console.log('a');
+      if(data.result==="error"){
+        $('.message').removeClass('light-green lighten-3');
+        // $('.message').text().search('0')===0 ?
+        $('.Message').css('display','block');
+        var message=(data.msg.split('<')[0]).replace('0 - ','');
+        $('.message').text(message)
+        // $('.message').text().search('0')
+        $('.message').addClass('red lighten-3');
+        $('#email').css('display', 'block');
+        $('#submit').css('display', 'block');
+      }else{
+        $('.message').removeClass('red lighten-3');
+        $('#email').css('display', 'none');
+        $('#submit').css('display', 'none');
+        $('.Message').css('display','block');
+        $('.message').addClass('light-green lighten-3');
+        $('.message').text(data.msg);
+        $('.message').append('<br><a href="#email" onclick="showS()">Type email again</a>');
+      }
+    },
+    error:function(error) {
+    }
+  })
+
+}
+
 Run();
 function Run() {
 	setTimeout(function() {
@@ -395,6 +441,5 @@ function Run() {
 	}, 3200);
 }
 </script>
-
   </body>
 </html>

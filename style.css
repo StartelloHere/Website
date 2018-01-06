@@ -48,29 +48,21 @@ input::placeholder {
   margin-left: 15px;
 }
 .message{
-  margin-top: 80px;
+padding: 7px;
 height: 50%;
 width: 50%;
-/*padding: 20px;*/
 border-radius: 10px;
 box-shadow: 0 0 5px #333;
-border-width: 1px;
-border-color: #84C341;
-border-style: solid;
+/*border-width: 1px;
+border-style: solid;*/
 margin-bottom: 15px;
 }
-.message>.head{
-  padding: 1px;
-    border-radius:10px 10px 0px 0px;
-    color: white;
-    font-size: 20px;
+/*
+.light-green.lighten-3{
+  border-color: #84C341;
 }
-.message>.body{
-  padding: 5px;
-  background-color: white;
-  border-radius:0px 0px 10px 10px;
+*/
 
-}
 .mce-error{
   /*height: 60px;*/
   padding: 10px;
