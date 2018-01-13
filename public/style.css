@@ -13,7 +13,7 @@ main {
   width: 100%;
 }
 svg{
-  width: 50%;
+  width: 65%;
 }
 /* change color of placeholder for the input email because it's very transparent */
 input::placeholder {
@@ -80,4 +80,16 @@ margin: 0px !important;
 }
 img{
   margin-top: 0px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .Simg{
+    height: 100px;
+    width: 600px;
+    overflow: hidden;
+  }
+  .Simg img{
+    max-width: initial;
+  }
+
 }
