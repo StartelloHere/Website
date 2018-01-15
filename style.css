@@ -87,10 +87,12 @@ img{
     display: block !important;
     width: 30%;
   }
-  .full{
-    display: none;
-  }
+  /* full for the Sandy image on website(big screen more than 600px) */
 
+  .full{
+    display:none;
+  }
+/* half for the Sandy image on mbile(small screen less than 600px)*/
 }
 .half{
   display: none;
