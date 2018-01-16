@@ -85,15 +85,18 @@ img{
 @media only screen and (max-width: 600px) {
   .half{
     display: block !important;
-    width: 30%;
+    width: 50%;
+    border-radius: 95px;
   }
   /* full for the Sandy image on website(big screen more than 600px) */
-
   .full{
     display:none;
   }
-/* half for the Sandy image on mbile(small screen less than 600px)*/
+  svg{
+    width: 90%;
+  }
 }
+/* half for the Sandy image on mbile(small screen less than 600px)*/
 .half{
   display: none;
 }
