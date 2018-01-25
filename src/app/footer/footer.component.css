@@ -1,0 +1,12 @@
+.footer{
+	box-shadow: 0 0 5px #333;
+  height: 60px !important;
+  width: 100%;
+}
+/* copyRight for  copyright in the fotter*/
+
+.copyRight{
+  font-size: 16px;
+  color: white;
+  margin-left: 15px;
+}

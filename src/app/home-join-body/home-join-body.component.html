@@ -1,0 +1,81 @@
+
+  <body class="valign-wrapper">
+    <!-- header -->
+    <div class="container">
+      <div class="row firstRow">
+          <!-- Startello svg logo -->
+          <app-svg-startello></app-svg-startello>
+          <!-- Sandy Image -->
+        </div>
+      <div class="row">
+        <div id="Simg" class="col s12 m6 l6 Simg">
+            <img  class="responsive-img full" src="./assets/images/Sandy final.PNG" height="400" width="600" alt="">
+            <img  class="responsive-img half" src="./assets/images/Sandy half.png" height="400" width="600" alt="">
+        </div>
+        <!-- Form for submit email to the list -->
+        <div id="Stext" class="col s12 m6 l6 Stext">
+          <p align="justify" class="flow-text ">Do you want to start your own business ? You dont have any idea how to start ?  We can help you . We will be launching a program to help people start their own businesss with mentors and guides. Join our mailing list to stay updated.</p>
+          <!-- div for response message from list email -->
+          <div class="Message"  style="display:none"><p class="message"></p></div>
+          <form action="//startello.us17.list-manage.com/subscribe/post-json?u=aa606a2ad43bc343e2446873a&amp;id=fdefd71ce6&c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <input id="email" name="EMAIL" class="email input-field col l7 m7 s11 validate" placeholder="Type your email here" type="email" required>
+            <button onclick="sendRequest()" id="submit" class="btn waves-effect z-depth-2 btn input-field col l3 m3 s11  waves-effect waves-light light-green darken-1">Join
+            </button>
+         </form>
+        </div>
+    </div>
+  </div>
+  <!-- main is necessary to get the footer at the bottom -->
+  <main></main>
+  <!-- Script to check email -->
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+  <!-- footer -->
+    <script type="text/javascript">
+    // funtcion to display the form
+    var ShowForm=function () {
+      $('#email').css('display', 'block');
+      $('#submit').css('display', 'block');
+    }
+    // send request by form information
+    var sendRequest = function () {
+      $.ajax({
+        type:$('form').attr('method'),
+        url:$('form').attr('action'),
+        data:$('form').serialize(),
+        dataType    : 'jsonp',
+        contentType: "application/jsonp; charset=utf-8",
+        jsonpCallback: 'callback',
+        // success response have 2 value in result
+        // error if email is wrong or already token
+        // success if email is registered
+        success:function(data) {
+          //error result if email is wrong or already token
+          if(data.result==="error"){
+            //hide previous message if form send request again and show the new message
+            $('.message').removeClass('light-green lighten-3');
+            $('.Message').css('display','block');
+            /*delete first 4 character becuase the message response contains '0 - '
+            and split for get the first text only - second text contains the details about the email error*/
+            var messageData=(data.msg.split('<')[0]).replace('0 - ','');
+            // set data from request to the div "message"
+            $('.message').text(messageData)
+            $('.message').addClass('red lighten-3');
+            $('#email').css('display', 'block');
+            $('#submit').css('display', 'block');
+          }else{
+            // if email is registered give success message
+            $('.message').removeClass('red lighten-3');
+            $('#email').css('display', 'none');
+            $('#submit').css('display', 'none');
+            $('.Message').css('display','block');
+            $('.message').addClass('light-green lighten-3');
+            $('.message').text(data.msg);
+            $('.message').append('<br><a href="#email" onclick="ShowForm()">Type email again</a>');
+          }
+        },
+        error:function(error) {
+          // error form the mailchimp
+        }
+      })
+    }
+    </script>

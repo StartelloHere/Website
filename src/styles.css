@@ -1,0 +1,34 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+/* main is necessary to get the footer at the bottom */
+main {
+  flex: 1 0 auto;
+}
+
+svg{
+  width: 65%;
+}
+/* change color of placeholder for the input email because it's very transparent */
+
+
+@media only screen and (max-width: 600px) {
+  .half{
+    display: block !important;
+    width: 50%;
+    border-radius: 95px;
+  }
+  /* full for the Sandy image on website(big screen more than 600px) */
+  .full{
+    display:none;
+  }
+  svg{
+    width: 90%;
+  }
+}
+/* half for the Sandy image on mbile(small screen less than 600px)*/
+.half{
+  display: none;
+}

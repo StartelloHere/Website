@@ -1,0 +1,223 @@
+/* animation for svg logo 'Startello' */
+  #Bydbj3a76ff{fill: #84C341;}#rkYZs36Q6Mz{fill: #404546;}#ByhbohTQafM{fill: #404546;}#BJT-jn6Xpfz{fill: #404546;}#rkC-s26XTGG{fill: #404546;}#rkkzi3aQ6Gz{fill: #404546;}#S1gfs3a7Tzf{fill: #404546;}#HyZzihTmTGM{fill: #404546;}#B1Mzi2aXTfG{fill: #404546;}#rJNGina7pMM{fill: #404546;}#BJBzin67pfz{fill: #84C341;}
+
+@keyframes BJBzin67pfzAnimation {
+0% {
+transform: translate(0px, 0px);
+}
+16.67% {
+transform: translate(0px, -14px);
+}
+25.56% {
+transform: translate(0px, 0px);
+}
+}
+
+#BJBzin67pfz {
+transform-origin: 50% 50% !important;
+animation: BJBzin67pfzAnimation 3s linear;
+}
+
+
+
+@keyframes B1Mzi2aXTfGAnimation {
+0% {
+transform: translate(-295px, 0px);
+opacity: 0;
+}
+80% {
+transform: translate(-295px, 0px);
+opacity: 0;
+}
+93.33% {
+transform: translate(0px, 0px);
+opacity: 1;
+}
+}
+
+#B1Mzi2aXTfG {
+transform-origin: 50% 50% !important;
+animation: B1Mzi2aXTfGAnimation 3s linear;
+}
+
+
+
+@keyframes HyZzihTmTGMAnimation {
+0% {
+transform: translate(-240px, 0px);
+opacity: 0;
+}
+66.67% {
+transform: translate(-240px, 0px);
+opacity: 0;
+}
+80% {
+transform: translate(0px, 0px);
+opacity: 1;
+}
+}
+
+#HyZzihTmTGM {
+transform-origin: 50% 50% !important;
+animation: HyZzihTmTGMAnimation 3s linear;
+}
+
+
+
+@keyframes S1gfs3a7TzfAnimation {
+0% {
+transform: translate(-195px, 0px);
+opacity: 0;
+}
+53.33% {
+transform: translate(-195px, 0px);
+opacity: 0;
+}
+66.67% {
+transform: translate(0px, 0px);
+opacity: 1;
+}
+}
+
+#S1gfs3a7Tzf {
+transform-origin: 50% 50% !important;
+animation: S1gfs3a7TzfAnimation 3s linear;
+}
+
+
+
+@keyframes rkkzi3aQ6GzAnimation {
+0% {
+transform: translate(-133px, 0px);
+opacity: 0;
+}
+42.22% {
+transform: translate(-133px, 0px);
+opacity: 0;
+}
+53.33% {
+transform: translate(0px, 0px);
+opacity: 1;
+}
+}
+
+#rkkzi3aQ6Gz {
+transform-origin: 50% 50% !important;
+animation: rkkzi3aQ6GzAnimation 3s linear;
+}
+
+
+
+@keyframes rkC-s26XTGGAnimation {
+0% {
+transform: translate(-70px, 0px);
+opacity: 0;
+}
+26.67% {
+transform: translate(-70px, 0px);
+opacity: 0;
+}
+41.11% {
+transform: translate(0px, 0px);
+opacity: 1;
+}
+}
+
+#rkC-s26XTGG {
+transform-origin: 50% 50% !important;
+animation: rkC-s26XTGGAnimation 3s linear;
+}
+
+
+
+@keyframes BJT-jn6XpfzAnimation {
+0% {
+transform: translate(58px, 0px);
+opacity: 0;
+}
+26.67% {
+transform: translate(41.14px, 0px);
+opacity: 0;
+}
+41.11% {
+transform: translate(0px, 0px);
+opacity: 1;
+}
+}
+
+#BJT-jn6Xpfz {
+transform-origin: 50% 50% !important;
+animation: BJT-jn6XpfzAnimation 3s linear;
+}
+
+
+
+@keyframes ByhbohTQafMAnimation {
+0% {
+transform: translate(115px, 0px);
+opacity: 0;
+}
+26.67% {
+transform: translate(115px, 0px);
+opacity: 0;
+}
+41.11% {
+transform: translate(115px, 0px);
+opacity: 0;
+}
+53.33% {
+transform: translate(0px, 0px);
+opacity: 1;
+}
+}
+
+#ByhbohTQafM {
+transform-origin: 50% 50% !important;
+animation: ByhbohTQafMAnimation 3s linear;
+}
+
+
+
+@keyframes rkYZs36Q6MzAnimation {
+0% {
+transform: translate(375px, 0px);
+opacity: 0;
+}
+93.33% {
+transform: translate(375px, 0px);
+opacity: 0;
+}
+100% {
+transform: translate(0px, 0px);
+opacity: 1;
+}
+}
+
+#rkYZs36Q6Mz {
+transform-origin: 20% 0% !important;
+animation: rkYZs36Q6MzAnimation 3.2s linear;
+}
+@keyframes moveA {
+100% {
+transform: translate(0px,8px);
+}
+}
+@keyframes Bydbj3a76ffAnimation {
+0% {
+transform: translate(375px, 0px);
+opacity: 0;
+}
+93.33% {
+transform: translate(375px, 0px);
+opacity: 0;
+}
+100% {
+transform: translate(0px, 0px);
+opacity: 1;
+}
+}
+
+#Bydbj3a76ff {
+transform-origin: 50% 50% !important;
+animation: Bydbj3a76ffAnimation 3.2s linear;
+}

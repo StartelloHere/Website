@@ -1,0 +1,55 @@
+input::placeholder {
+  color: black;
+}
+/* btn class bor button submit */
+.btn{
+  margin-left: 15px !important;
+}
+.email{
+  margin-left: 15px !important;
+}
+
+/* email:focus for animation on click at the input email */
+.email:focus {
+  border-bottom: 1px solid #7cb342 !important;
+  box-shadow: 0 1px 0 0 #7cb342 !important;
+ }
+ /*edit- responsive-img is class for the materialize */
+.responsive-img{
+  margin-top: 6%;
+  margin-bottom: 6%;
+  width: 70%;
+}
+
+/* Design for the default message dev */
+.message{
+padding: 7px;
+height: 50%;
+width: 50%;
+border-radius: 10px;
+box-shadow: 0 0 5px #333;
+margin-bottom: 15px;
+}
+/* mce-success class for the error message  */
+.mce-error{
+  padding: 10px;
+margin: 5px;
+  box-shadow: 0 0 5px #333;
+  border-radius: 5px;
+}
+/* mce-success class for the success message  */
+.mce-success{
+  margin: 5px;
+  padding: 10px;
+  box-shadow: 0 0 5px #333;
+  border-radius: 5px;
+}
+.firstRow{
+margin: 0px !important;
+}
+.flow-text {
+  margin-top: 0px !important;
+}
+img{
+  margin-top: 0px !important;
+}
