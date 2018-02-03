@@ -5,7 +5,6 @@
   <title>Startello</title>
   <!-- meta tag -->
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-
     <meta property="og:title" content="Startello">
     <meta property="og:type"  content="website">
     <meta property="og:url"  content="https://startello.com">
@@ -16,9 +15,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <!-- Roboto font -->
+     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
     <!-- cdn materialize Design -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
 
     <!-- Jquery cdn -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -38,10 +42,23 @@
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-MW4V26R');</script>
+
     <!-- End Google Tag Manager -->
   <base href="/">
 </head>
-<body>
+<body >
   <app-root></app-root>
 </body>
 </html>
+
+
+
+<script type="text/javascript">
+SetAanimation();
+function SetAanimation() {
+  // set animation for A character in the logo after 3.2 second
+  setTimeout(function() {
+    $('.GreenA').css('animation', 'moveA 0.5s infinite alternate');
+  }, 3200);
+}
+</script>

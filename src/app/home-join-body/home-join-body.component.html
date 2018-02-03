@@ -1,32 +1,27 @@
-
-  <body class="valign-wrapper">
-    <!-- header -->
-    <div class="container">
+    <div class="container " align="center">
       <div class="row firstRow">
           <!-- Startello svg logo -->
           <app-svg-startello></app-svg-startello>
           <!-- Sandy Image -->
         </div>
-      <div class="row">
-        <div id="Simg" class="col s12 m6 l6 Simg">
-            <img  class="responsive-img full" src="./assets/images/Sandy final.PNG" height="400" width="600" alt="">
-            <img  class="responsive-img half" src="./assets/images/Sandy half.png" height="400" width="600" alt="">
+      <div class=" row">
+        <div id="Simg" class="col-xs-12 col-xl-6 col-sm-6 col-lg-6  col-md-6  Simg ">
+            <img class="img-responsive full" src="./assets/images/Sandy final.PNG"  alt="">
+            <img class="img-responsive half" src="./assets/images/Sandy half.png"  alt="">
         </div>
         <!-- Form for submit email to the list -->
-        <div id="Stext" class="col s12 m6 l6 Stext">
-          <p align="justify" class="flow-text ">Do you want to start your own business ? You dont have any idea how to start ?  We can help you . We will be launching a program to help people start their own businesss with mentors and guides. Join our mailing list to stay updated.</p>
+        <div id="Stext" class="col-xs-12 col-xl-6 col-sm-6 col-lg-6 col-md-6 Stext">
+          <p align="justify" class="flow-text">Do you want to start your own business ? You dont have any idea how to start ?  We can help you . We will be launching a program to help people start their own businesss with mentors and guides. Join our mailing list to stay updated.</p>
           <!-- div for response message from list email -->
           <div class="Message"  style="display:none"><p class="message"></p></div>
           <form action="//startello.us17.list-manage.com/subscribe/post-json?u=aa606a2ad43bc343e2446873a&amp;id=fdefd71ce6&c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <input id="email" name="EMAIL" class="email input-field col l7 m7 s11 validate" placeholder="Type your email here" type="email" required>
-            <button onclick="sendRequest()" id="submit" class="btn waves-effect z-depth-2 btn input-field col l3 m3 s11  waves-effect waves-light light-green darken-1">Join
+            <input id="email" name="EMAIL" class="email input-field col-sm-7 col-xl-7 col-lg-7 col-md-7 col-xs-11 validate" placeholder="Type your email here" type="email" required>
+            <button onclick="sendRequest()" id="submit" class="btn input-field col-xl-3 col-sm-3 col-lg-3 col-md-3 col-xs-11 light-green">JOIN
             </button>
          </form>
         </div>
     </div>
   </div>
-  <!-- main is necessary to get the footer at the bottom -->
-  <main></main>
   <!-- Script to check email -->
   <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
   <!-- footer -->

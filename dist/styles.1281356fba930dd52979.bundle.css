@@ -1,0 +1,3 @@
+/* change color of placeholder for the input email because it's very transparent */@media only screen and (max-width:600px){svg{width:80%!important}.half{display:block!important;width:45%!important;border-radius:95px}
+  /* full for the Sandy image on website(big screen more than 600px) */.full{display:none}}
+/* half for the Sandy image on mbile(small screen less than 600px)*/.half{display:none}.light-green{background-color:#8bc34a}

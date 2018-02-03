@@ -1,5 +1,5 @@
-.header{
-  position: relative;
-  height: 60px !important;
-  width: 100%;
+.navbar{
+  box-shadow: 0 0 5px #333;
+  border-radius: 0px;
+  margin-bottom: 0px !important;
 }
